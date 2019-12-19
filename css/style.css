@@ -184,5 +184,21 @@
 }
 
 
-
+.banner {
+    
+}
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1 1 auto;
+    background: url(../img/banner.jpg) center/ cover no-repeat;
+}
+.banner .banner__inscription {
+    display: inline;
+    padding: 12px 8px;
+    margin: 460px 0 0 0;
+    background: #ff0000;
+}
+.banner .banner__title {
 }
