@@ -97,6 +97,10 @@
     color: #212121;
 }
 
+.mobile{
+    display: none;
+}
+
 @media screen and (max-width: 959px) {
     ul.menu__list {
         display: none;
