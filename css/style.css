@@ -1,1 +1,184 @@
-﻿
+﻿@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Gilda+Display|Quattrocento+Sans|Rufina&display=swap');
+
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    text-align: center;
+    padding: 65px 0 16px;
+}
+
+.logo__title {
+    font-family: 'Gilda Display', Arial, sans-serif;
+    font-size: 48px;
+    color: #000;
+    text-transform: uppercase;
+
+}
+
+.logo__text {
+    font-family: 'Quattrocento Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #cccccc;
+    text-transform: uppercase;
+    padding-top: 12px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 3px 5px 5px #fcfcfc;
+    padding: 35px 0;
+}
+
+.social {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    font-size: 14px;
+}
+
+.social__item {
+    padding: 0 14px 0 0;
+    color: #000;
+}
+
+.social__item a {
+    color: #000;
+}
+
+.social__item:last-child {
+    padding: 0;
+}
+
+.menu {}
+
+
+
+.menu__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.list__item {
+    padding: 0 38px 0 0;
+}
+
+.list__item:last-child {
+    padding: 0 0 0 0;
+}
+
+.item__link {
+    color: #111111;
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.search {
+    border-left: 1px solid #000000;
+    padding-left: 14px;
+    font-size: 14px;
+}
+
+.search__link {
+    color: #212121;
+}
+
+@media screen and (max-width: 959px) {
+    ul.menu__list {
+        display: none;
+    }
+
+    .menu__mobile {
+        display: block;
+        width: 50px;
+        height: 20px;
+        position: relative;
+        transition: all 0.8s ease 0s;
+    }
+
+    .menu__mobile span {
+        position: absolute;
+        background-color: #000;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        top: 9px;
+    }
+
+    .menu__mobile::after,
+    .menu__mobile::before {
+        content: '';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+    }
+
+    .menu__mobile::after {
+        bottom: 0;
+    }
+
+    .menu__mobile::before {
+        top: 0;
+    }
+
+    .menu__active {
+        transform: rotate(180deg);
+
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(45deg, #ffffff, #C5DDE8);
+        position: relative;
+        z-index: 15;
+        overflow: hidden;
+        height: 0px;
+        transition: all 1s ease;
+    }
+
+    .mobile__list {
+        padding: 20px 0;
+    }
+
+    .mobile__item {
+        padding: 20px 0;
+    }
+
+    .mobile__item__link {
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #ffffff;
+        text-shadow: 2px 2px 2px #ccc, -1px -1px 1px #000;
+    }
+
+    .mobile__height {
+        height: 400px;
+        transition: all 1s ease;
+    }
+
+
+}
+
+
+
+}
