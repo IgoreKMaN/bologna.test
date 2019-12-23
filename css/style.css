@@ -97,7 +97,7 @@
     color: #212121;
 }
 
-.mobile{
+.mobile {
     display: none;
 }
 
@@ -184,21 +184,70 @@
 }
 
 
-.banner {
-    
-}
+.banner {}
+
 .banner__content {
     display: flex;
     flex-direction: column;
     text-align: center;
     flex: 1 1 auto;
-    background: url(../img/banner.jpg) center/ cover no-repeat;
+    background: url(../img/banner.jpg) 50% / cover no-repeat;
+    padding: 460px 0 78px 0;
 }
-.banner .banner__inscription {
-    display: inline;
+
+.banner__inscription {
+    display: flex;
+    justify-content: center;
+}
+
+.banner__inscription p {
     padding: 12px 8px;
-    margin: 460px 0 0 0;
     background: #ff0000;
+    font-family: 'Quattrocento Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #fff;
 }
-.banner .banner__title {
+
+.banner__title {
+    display: flex;
+    justify-content: center;
+}
+
+.banner__title p {
+    color: #fff;
+    font-family: 'Rufina', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: capitalize;
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+
+.container{
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.article{
+    padding-top: 95px;
+}
+
+.article-item{
+    max-width: 280px;
+}
+
+
+.item__description {
+}
+.item__description p {
+}
+.item__title {
+}
+.item__text {
+}
+.item__date {
 }
