@@ -243,6 +243,12 @@ img {
 
 .article {
     display: flex;
+    flex-direction: column;
+    flex: 1 1 66%;
+}
+
+.article_col{
+    display: flex;
     flex-direction: row;
     flex: 1 1 66%;
     justify-content: space-between;
@@ -338,6 +344,19 @@ img {
     display: inline;
     color: #898989;
 }
+
+.load {
+	display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    margin-bottom: 90px;
+}
+
+.load__img{
+    max-width: 44px;
+   
+}
+
 
 .aside {
     display: flex;
@@ -506,7 +525,8 @@ img {
 }
 
 .insta__subtitle,
-.categories__subtitle{
+.categories__subtitle,
+.tags__subtitle{
     color: #000;
     font-family: 'Rufina', Arial, sans-serif;
     font-size: 24px;
@@ -537,7 +557,8 @@ img {
 
 .categories__item{
     padding: 10px 10px 15px ;
-    color: #000;                                                                                 font-family: 'Quattrocento Sans', Arial, sans-serif;
+    color: #000; 
+    font-family: 'Quattrocento Sans', Arial, sans-serif;
     font-size: 13px;     
     
 }
@@ -556,6 +577,7 @@ img {
     background-image: url("../img/blog_bg.jpg");
     background-size: contain;
     background-repeat: no-repeat;
+    padding: 158px 0 152px 0;
 }
 
 .blog__text{
@@ -563,10 +585,30 @@ img {
     font-size: 30px;
     font-weight: bold;
     color: #636363;
+    text-align: center;
 }
 
-.blog__title{
+.blog__subtitle{
     font-size: 60px;
     color: #000;
+    text-transform: uppercase;
 }
 
+.tags{
+    margin-top: 58px;
+}
+
+.tags__subtitle{
+    
+}
+
+.tsags__wrap{
+     color: #000; 
+    font-family: 'Quattrocento Sans', Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 42px;
+}
+
+.tsags__wrap span{
+    color: #d0d0d0;
+}
