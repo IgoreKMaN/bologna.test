@@ -453,7 +453,7 @@ img {
 }
 
 #distribution__submit:hover {
-    box-shadow: 120px 54px 7px -5px #fff inset;
+    box-shadow: 70px 27px 7px -5px #fff inset, -70px -27px 7px -5px #fff inset ;
     color: #000;   
 }
 
@@ -505,7 +505,8 @@ img {
     font-weight: bold;
 }
 
-.insta__subtitle{
+.insta__subtitle,
+.categories__subtitle{
     color: #000;
     font-family: 'Rufina', Arial, sans-serif;
     font-size: 24px;
@@ -525,3 +526,47 @@ img {
     display: flex;
     flex: 1 1 50%;
 }
+
+.catigories{
+    margin: 58px 0 0 0;
+}
+
+.categories__list{
+    margin: 24px 0 50px;
+}
+
+.categories__item{
+    padding: 10px 10px 15px ;
+    color: #000;                                                                                 font-family: 'Quattrocento Sans', Arial, sans-serif;
+    font-size: 13px;     
+    
+}
+
+.categories__item:nth-child(even){
+   background: #f7f7f7;
+    border-bottom: 1px dotted #eeeeee;
+    border-top: 1px dotted #eeeeee;
+}
+
+.categories__item a{
+    color: #000;
+}
+
+.blog__bg{
+    background-image: url("../img/blog_bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.blog__text{
+    font-family: 'Quattrocento Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #636363;
+}
+
+.blog__title{
+    font-size: 60px;
+    color: #000;
+}
+
