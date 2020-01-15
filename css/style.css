@@ -678,11 +678,12 @@ img {
 .copyright {
     font-family: 'Quattrocento Sans', Arial, sans-serif;
     font-size: 16px;
+    color: #898989;
     padding-right: 94px;
     flex: 0 1 50%;
     text-align: right;
     background-color: #f7f7f7;
-    padding: 64px 0 74px 0;
+    padding: 64px 40px 74px 0;
 }
 
 .copy {
