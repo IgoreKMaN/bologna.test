@@ -104,87 +104,7 @@ img {
     display: none;
 }
 
-@media screen and (max-width: 959px) {
-    ul.menu__list {
-        display: none;
-    }
 
-    .menu__mobile {
-        display: block;
-        width: 50px;
-        height: 20px;
-        position: relative;
-        transition: all 0.8s ease 0s;
-    }
-
-    .menu__mobile span {
-        position: absolute;
-        background-color: #000;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        top: 9px;
-    }
-
-    .menu__mobile::after,
-    .menu__mobile::before {
-        content: '';
-        background-color: #000;
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        left: 0;
-    }
-
-    .menu__mobile::after {
-        bottom: 0;
-    }
-
-    .menu__mobile::before {
-        top: 0;
-    }
-
-    .menu__active {
-        transform: rotate(180deg);
-
-    }
-
-    .mobile {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        background: linear-gradient(45deg, #ffffff, #C5DDE8);
-        position: relative;
-        z-index: 15;
-        overflow: hidden;
-        height: 0px;
-        transition: all 1s ease;
-    }
-
-    .mobile__list {
-        padding: 20px 0;
-    }
-
-    .mobile__item {
-        padding: 20px 0;
-    }
-
-    .mobile__item__link {
-        text-transform: uppercase;
-        font-family: 'Quattrocento Sans', Arial, sans-serif;
-        font-weight: bold;
-        font-size: 20px;
-        color: #ffffff;
-        text-shadow: 2px 2px 2px #ccc, -1px -1px 1px #000;
-    }
-
-    .mobile__height {
-        height: 400px;
-        transition: all 1s ease;
-    }
-
-
-}
 
 
 .banner {}
@@ -355,6 +275,26 @@ img {
 .load__img {
     max-width: 44px;
 
+}
+
+.load__img:hover {
+	cursor: pointer;
+    animation: transform 1.5s infinite linear;
+   
+}
+
+@keyframes transform{
+    0%{
+         transform: rotate(0deg);
+    }
+    
+    50%{
+         transform: rotate(180deg);
+    }
+    
+    100%{
+         transform: rotate(360deg);
+    }
 }
 
 
@@ -718,4 +658,152 @@ img {
 
 .bmenu__item__link {
     color: #898989;
+}
+
+
+
+
+@media screen and (max-width: 960px) {
+    ul.menu__list {
+        display: none;
+    }
+
+    .menu__mobile {
+        display: block;
+        width: 50px;
+        height: 20px;
+        position: relative;
+        transition: all 0.8s ease 0s;
+    }
+
+    .menu__mobile span {
+        position: absolute;
+        background-color: #000;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        top: 9px;
+    }
+
+    .menu__mobile::after,
+    .menu__mobile::before {
+        content: '';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+    }
+
+    .menu__mobile::after {
+        bottom: 0;
+    }
+
+    .menu__mobile::before {
+        top: 0;
+    }
+
+    .menu__active {
+        transform: rotate(180deg);
+
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(45deg, #f7f7f7, #ededeb);
+        position: relative;
+        z-index: 15;
+        overflow: hidden;
+        height: 0px;
+        transition: all 1s ease;
+    }
+
+    .mobile__list {
+        padding: 20px 0;
+    }
+
+    .mobile__item {
+        padding: 20px 0;
+    }
+
+    .mobile__item__link {
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #ffffff;
+        text-shadow: 2px 2px 2px #ccc, -1px -1px 1px #000;
+    }
+
+    .mobile__height {
+        height: 400px;
+        transition: all 1s ease;
+    }
+
+    
+    .column__two{
+        flex-wrap: wrap;
+    }
+    
+    .article{
+        flex: 1 1 auto;
+    }
+    
+    .aside{
+        flex: 1 1 auto;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .load{
+        margin-bottom: 0;
+    }
+    .bmenu__list{
+        flex-direction: column;
+    }
+    
+    .bmenu__item{
+        padding: 0 0 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (max-width: 479px) {
+    .banner__content{
+        background-position: 70%;
+    }
+    
+    .article_col{
+        flex-wrap: wrap;
+    }
+    
+    .article_col__one{
+        flex: 1 1 auto;
+    }
+    
+    .article_col__two{
+        flex: 1 1 auto;
+    }
+    
+    .instagramm__subtitle{
+        padding: 0 74px 32px;
+    } 
+    
+    .two__photo{
+        flex-basis: 33.33333333333333%
+    }
+    
+    .one__photo{
+        flex-basis: 66.6666666667%
+    }
+    
+    .three__photo{
+        flex-basis: 66.6666666667%;
+    }
+    
 }
